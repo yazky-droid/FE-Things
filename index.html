@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portofolio Tailwind Yazz</title>
+</head>
+<body class="font-nunito">
+     <!-- hero section -->
+     <div id="home" class="h-[50vh] lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-950 dark:to-slate-900 relative overflow-hidden">
+        <!-- navbar -->
+        <nav class="fixed top-0 z-10 w-full px-2 shadow-md backdrop-blur-md">
+            <div class="container flex items-center justify-between py-5 mx-auto">
+                <div class="flex items-center gap-2 ">
+                    <img src="src/img/logo-luffy.jpg" class="object-cover w-8 h-8 rounded-full" alt="logo luffy">
+                    <p class="text-2xl font-bold text-blue-400">LuffyPorto</p>
+                </div>
+                <ul class="hidden space-x-10 text-sm font-bold text-gray-600 uppercase dark:text-gray-100 md:flex">
+                    <li class="hover:text-gray-400">
+                        <a href="#home">home</a>
+                    </li>
+                    <li class="hover:text-gray-400">
+                        <a href="#about">about</a>
+                    </li>
+                    <li class="hover:text-gray-400">
+                        <a href="#services">services</a>
+                    </li>
+                    <li class="hover:text-gray-400">
+                        <a href="#works">works</a>
+                    </li>
+                    <li class="hover:text-gray-400">
+                        <a href="#contact">contact</a>
+                    </li>
+                </ul>
+                <img id="moon" src="src/img/moon.png" class="hidden w-8 h-8 rounded-full cursor-pointer md:block" alt="">
+                <div id="hamburgerMenu" class="z-10 space-y-1 cursor-pointer md:hidden">
+                    <div class="w-6 h-0.5 bg-black dark:bg-white"></div>
+                    <div class="w-6 h-0.5 bg-black dark:bg-white"></div>
+                    <div class="w-6 h-0.5 bg-black dark:bg-white"></div>
+                </div>
+                <ul id="menu" class="absolute top-0 left-0 hidden w-full p-10 space-y-10 text-center uppercase bg-indigo-900 text-slate-100 rounded-b-3xl">
+                    <li>
+                        <a id="hLink" href="#home">home</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#about">about</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#services">services</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#works">works</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#contact">contact</a>
+                    </li>
+                    <li>
+                        <img id="moon" src="src/img/moon.png" class="my-0 mx-auto w-8 h-8 rounded-full cursor-pointer md:block" alt="">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- hero content -->
+        <!-- image -->
+        <img src="src/img/luffy-wano-better.png" class="absolute bottom-0 right-0 object-cover mx-auto h-5/6 lg:left-0" alt="luffy">
+        <!-- bg-element -->
+        <div class="absolute left-0 right-0 hidden mx-auto bg-indigo-900 rounded-full lg:block -bottom-1/4 w-big h-big -z-10 "></div>
+        <!-- animated text -->
+        <div class="absolute text-xl top-1/3 left-5 sm:left-16 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-8xl">
+            <span class="text-gray-600 dark:text-slate-200">I'm the</span>
+            <p id="text" class="text-red-500"></p>
+        </div>
+        <!-- text -->
+        <div class="absolute top-0 bottom-0 flex-col hidden w-1/3 gap-5 p-6 m-auto bg-white rounded-md shadow-md dark:shadow-slate-800 dark:bg-slate-900 h-fit lg:flex right-10">
+            <h1 class="text-3xl font-bold text-indigo-900">Yo, Ore wa Luffy!</h1>
+            <p class="text-gray-500">
+                I don't have to be a boss or a great pirate, do I? Whenever you guys are in trouble, call us! We'll come help you no matter what.
+            </p>
+            <a href="#contact" class="px-3 py-2 text-xl font-semibold bg-indigo-700 rounded-sm shadow-sm text-slate-200 w-fit">Have Meat?</a>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="px-10 dark:bg-slate-900">
+        <div class="container flex flex-col-reverse items-center gap-20 py-40 mx-auto lg:flex-row">
+            <!-- left section -->
+            <div class="relative">
+                <img src="./src/img/dots.png" class="absolute top-0 -left-16 sm:-left-20 md:-left-32 lg:-left-12 -z-10 " alt="dots">
+                <div class="h-full overflow-hidden rounded-full">
+                <img src="./src/img/luffy-potrait.jpg" class="w-72 h-fit lg:w-big" alt="potrait">
+                </div>
+            </div>
+            <!-- right section -->
+            <div class="flex flex-col gap-3 my-auto text-center sm:text-left">
+                <h1 class="font-bold text-indigo-900 ">ABOUT ME</h1>
+                <h1 class="text-3xl font-medium dark:text-slate-200">Better Meat</h1>
+                <h1 class="text-3xl font-medium dark:text-slate-200">Better Freedom</h1>
+                <p class="text-gray-400">My dream is to become the Pirate King and find One Piece, yet it all started back in his early childhood. Even you guys know that I want to follow in the footsteps of Gold D. Roger. Right before the latter's execution, the Pirate King said there was a great treasure out there for anybody to find. The one who will find the treasure is me, and I will be the Pirate King!</p>
+                <h2 class="font-medium text-gray-400 dark:text-gray-300">Baka Senchou</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+                </div>
+                <h2 class="font-medium text-gray-400 dark:text-gray-300">Fight</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-10/12 bg-indigo-600 h-1.5 rounded-md"></div>
+                </div>
+                <h2 class="font-medium text-gray-400 dark:text-gray-300">Help Countries</h2>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                    <div class="w-11/12 bg-indigo-600 h-1.5 rounded-md"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services" class="py-20 md:py-32 dark:bg-slate-900">
+        <div class="container mx-auto">
+
+            <!-- Top -->
+            <div class="flex flex-col items-center gap-3">
+                <h1 class="font-bold text-indigo-900">SERVICES</h1>
+                <h1 class="text-3xl font-medium dark:text-slate-200">What can I offer?</h1>
+                <p class="w-1/2 text-center text-gray-400">The Straw Hat Pirates, also known as the Mugiwara Pirates, Straw Hat Crew or simply the Straw Hats, are a very infamous and powerful pirate crew that originated from the East Blue.</p>            
+            </div>
+            <!-- Bottom -->
+            <div class="flex flex-wrap items-center justify-center gap-6 p-5 sm:p-2 md:p-0">
+                <!-- card -->
+                <div class="flex flex-col w-full gap-3 h-64 md:h-80 lg:h-64 p-5 my-3 rounded-lg shadow-xl md:my-10 md:w-3/12 dark:shadow-gray-950 dark:shadow-md">
+                    <img src="src/img/icon-jangkar.png" class="w-10 dark:backdrop-invert" alt="icon">
+                    <h1 class="text-lg font-medium dark:text-white">Pirate</h1>
+                    <p class="text-gray-400">We are pirates who sail the seas around the world.</p>
+                    <a href="" class="text-sm font-semibold text-indigo-600">Read more</a>
+                </div>
+                <div class="flex flex-col w-full gap-3 h-64 md:h-80 lg:h-64 p-5 my-3 rounded-lg shadow-xl md:my-10 md:w-3/12 dark:shadow-gray-950 dark:shadow-md">
+                    <img src="src/img/friendship-icon.png" class="w-10 dark:backdrop-invert" alt="icon">
+                    <h1 class="text-lg font-medium dark:text-white ">Friendship</h1>
+                    <p class="text-gray-400">We always put our Nakama first. Friends won't leave you when you're in trouble</p>
+                    <a href="" class="text-sm font-semibold text-indigo-600">Read more</a>
+                </div>
+                <div class="flex flex-col w-full gap-3 h-64 md:h-80 lg:h-64 p-5 my-3 rounded-lg shadow-xl md:my-10 md:w-3/12 dark:shadow-gray-950 dark:shadow-md">
+                    <img src="src/img/freedom-icon.jpg" class="w-10" alt="icon">
+                    <h1 class="text-lg font-medium dark:text-white">Freedom</h1>
+                    <p class="text-gray-400">We believe that overybody has the right of themselves to be free.</p>
+                    <a href="" class="text-sm font-semibold text-indigo-600">Read more</a>
+                </div>
+                <div class="flex flex-col w-full gap-3 h-64 md:h-80 lg:h-64 p-5 my-3 rounded-lg shadow-xl md:my-10 md:w-3/12 dark:shadow-gray-950 dark:shadow-md">
+                    <img src="src/img/party-icon.png" class="w-10 filter dark:backdrop-invert" alt="icon">
+                    <h1 class="text-lg font-medium dark:text-white">Party</h1>
+                    <p class="text-gray-400">We like do party. Party is a part of this Mugiwara Pirates.</p>
+                    <a href="" class="text-sm font-semibold text-indigo-600">Read more</a>
+                </div>
+                <div class="flex flex-col w-full gap-3 h-64 md:h-80 lg:h-64 p-5 my-3 rounded-lg shadow-xl md:my-10 md:w-3/12 dark:shadow-gray-950 dark:shadow-md">
+                    <img src="src/img/dream-icon.png" class="w-10 dark:backdrop-invert" alt="icon">
+                    <h1 class="text-lg font-medium dark:text-white">Dreams</h1>
+                    <p class="text-gray-400">We are chasing our dreams. Each of us has dreams that needs to be turned into reality.</p>
+                    <a href="" class="text-sm font-semibold text-indigo-600">Read more</a>
+                </div>
+                <div class="flex flex-col w-full gap-3 h-64 md:h-80 lg:h-64 p-5 my-3 rounded-lg shadow-xl md:my-10 md:w-3/12 dark:shadow-gray-950 dark:shadow-md">
+                    <img src="src/img/niku-icon.jpg" class="w-10" alt="icon">
+                    <h1 class="text-lg font-medium dark:text-white">Niku</h1>
+                    <p class="text-gray-400">Our captain, Baka Senchou really loves niku.</p>
+                    <a href="" class="text-sm font-semibold text-indigo-600">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- works -->
+    <div id="works" class="py-20 md:py-32 dark:bg-slate-900">
+        <div class="container mx-auto">
+
+            <!-- Top -->
+            <div class="flex flex-col items-center gap-3">
+                <h1 class="font-bold text-indigo-900">OUR JOURNEY</h1>
+                <h1 class="text-3xl font-medium dark:text-slate-200">The Things We Do</h1>
+                <p class="w-1/2 text-center text-gray-400">The Straw Hat Pirates, also known as the Mugiwara Pirates, Straw Hat Crew or simply the Straw Hats, are a very infamous and powerful pirate crew that originated from the East Blue.</p>            
+            </div>
+            <!-- Bottom -->
+            <div class="flex flex-wrap items-center justify-center gap-6 p-5 sm:p-0">
+                <!-- img -->
+                <div class="w-full m-1 rounded-md shadow-xl md:w-5/12 lg:w-1/5 md:my-10 dark:shadow-gray-950 dark:shadow-md p-3">
+                    <img class="w-96 h-96 md:w-64 md:h-64 object-cover mx-auto my-0" src="src/img/luffy-arlong.jpg" alt="icon">
+                </div>
+                <div class="w-full m-1 rounded-md shadow-xl md:w-5/12 lg:w-1/5 md:my-10 dark:shadow-gray-950 dark:shadow-md p-3">
+                    <img class="w-96 h-96 md:w-64 md:h-64 object-cover mx-auto my-0" src="src/img/luffy-croco.jpg" alt="icon">
+                </div>
+                <div class="w-full m-1 rounded-md shadow-xl md:w-5/12 lg:w-1/5 md:my-10 dark:shadow-gray-950 dark:shadow-md p-3">
+                    <img class="w-96 h-96 md:w-64 md:h-64 object-cover mx-auto my-0" src="src/img/luffy-lucci.jpg" alt="icon">
+                </div>
+                <div class="w-full m-1 rounded-md shadow-xl md:w-5/12 lg:w-1/5 md:my-10 dark:shadow-gray-950 dark:shadow-md p-3">
+                    <img class="w-96 h-96 md:w-64 md:h-64 object-cover mx-auto my-0" src="src/img/luffy-enel.png" alt="icon">
+                </div>
+                <div class="w-full m-1 rounded-md shadow-xl md:w-5/12 lg:w-1/5 md:my-10 dark:shadow-gray-950 dark:shadow-md p-3">
+                    <img class="w-96 h-96 md:w-64 md:h-64 object-cover mx-auto my-0" src="src/img/luffy-marineford.jpg" alt="icon">
+                </div>
+                <div class="w-full m-1 rounded-md shadow-xl md:w-5/12 lg:w-1/5 md:my-10 dark:shadow-gray-950 dark:shadow-md p-3">
+                    <img class="w-96 h-96 md:w-64 md:h-64 object-cover mx-auto my-0" src="src/img/luffy-v-doffy.jpg" alt="icon">
+                </div>
+                <div class="w-full m-1 rounded-md shadow-xl md:w-5/12 lg:w-1/5 md:my-10 dark:shadow-gray-950 dark:shadow-md p-3">
+                    <img class="w-96 h-96 md:w-64 md:h-64 object-cover mx-auto my-0" src="src/img/luffy-katakuri.jpg" alt="icon">
+                </div>
+                <div class="w-full m-1 rounded-md shadow-xl md:w-5/12 lg:w-1/5 md:my-10 dark:shadow-gray-950 dark:shadow-md p-3">
+                    <img class="w-96 h-96 md:w-64 md:h-64 object-cover mx-auto my-0" src="src/img/luffy-kaidonbigmom.jpg" alt="icon">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact" class="dark:bg-slate-900 py-20 md:py-32">
+        <div class="container mx-auto">
+
+        <!-- top -->
+            <div class="flex flex-col items-center gap-3">
+                <h1 class="font-bold text-indigo-900">CONTACT</h1>
+                <h1 class="text-3xl font-medium dark:text-slate-200">Do you have a <span class="text-red-400">Meat</span>?</h1>
+                <p class="w-1/2 text-center text-gray-400">I mean do you have a problem? Let's discuss it and see what we can do together to defeat the villain.</p>            
+            </div>
+        <!-- bottom -->
+            <form class="flex flex-col items-center justify-center gap-5 p-8 mt-5 ">
+                <input class="w-full p-2 rounded-sm md:w-1/2 ring-1 ring-indigo-300 dark:bg-slate-950 dark:ring-0 dark:text-white" type="text" placeholder="Name Surname">
+                <input class="w-full p-2 rounded-sm md:w-1/2 ring-1 ring-indigo-300 dark:bg-slate-950 dark:ring-0 dark:text-white" type="email" placeholder="Email">
+                <textarea class="w-full p-2 rounded-sm md:w-1/2 ring-1 ring-indigo-300 dark:bg-slate-950 dark:ring-0 dark:text-white" cols="30" rows="10" placeholder="Message..."></textarea>
+                <button class="w-1/2 px-3 py-2 font-medium text-white bg-indigo-600 rounded-md cursor-pointer dark:bg-indigo-900">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="w-full bg-gray-800 dark:bg-gray-900">
+        <div class="container flex items-center justify-between py-5 mx-auto">
+            <div class="flex items-center gap-2">
+                <img src="src/img/logo-luffy.jpg" class="object-cover w-8 h-8 rounded-full" alt="logo luffy">
+                <p class="text-2xl font-bold text-blue-400">LuffyPorto</p>
+            </div>
+            <span class="hidden font-medium text-white md:block">&copy; 2023 LuffyPorto. Design by Lama Dev & Code by Yaz</span>
+            <div class="flex gap-3">
+                <img class="w-4 cursor-pointer" src="src/img/facebook.png">
+                <img class="w-4 cursor-pointer" src="src/img/twitter.png">
+                <a href="https://www.instagram.com/yazkymauln_/?hl=en">
+                    <img class="w-4 cursor-pointer" src="src/img/instagram.png">
+                </a>
+                <img class="w-4 cursor-pointer" src="src/img/linkedin.png">
+            </div>
+        </div>
+    </div>
+        <script src="app.js"></script>
+        <script src="autotyping.js"></script>
+    </body>
+    </html>
